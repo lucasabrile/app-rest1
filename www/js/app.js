@@ -10,7 +10,7 @@ $$('.login-screen-open').show();
 var app  = new Framework7({
   root: '#app', // App root element
   id: 'io.framework7.testapp', // App bundle ID
-  name: 'Framework7', // App name
+  name: 'Rest Restaurantes', // App name
   theme: 'auto', // Automatic theme detection
   // App root data
   data: function () {
@@ -85,7 +85,7 @@ $$('#my-login-screen .SingIn').on('click', function () {
     .signInWithEmailAndPassword(username,password)//Promisses
     .then( function () {
       app.dialog.alert('Bem vindo: ' + username);
-      this.$$('.toolbar-inner').text('Bem Vindo: ' + username + 'vc está logado!');
+      this.$$('.toolbar-inner').text('Bem Vindo: ' + username + ' você está logado!');
       if(username == "admin@gmail.com") {
         $$('.logoff').show();
       $$('.orcamentoindex').show();
