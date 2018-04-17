@@ -4,6 +4,7 @@ $$('.logoff').hide();
 $$('.estoqueindex').hide();
 $$('.pedidosadmindex').hide();
 $$('.login-screen-open').show();
+$$('.cadastro').show(); 
 
 
 // Framework7 App main instance
@@ -94,6 +95,7 @@ $$('#my-login-screen .SingIn').on('click', function () {
       $$('input#email').val('');
       $$('input#password').val(''); 
       $$('.pedidosadmindex').show(); 
+      $$('.cadastro').show(); 
       }
       else{
         $$('.logoff').show();

@@ -66,7 +66,7 @@
                       <a href="/sobre/" data-view=".view-main" class="panel-close">Sobre</a>
                     </li>
                     <li>
-                      <a href="/produto/" data-view=".view-main" class="panel-close">Cardápio</a>
+                      <a href="/cardapio/" data-view=".view-main" class="panel-close">Cardápio</a>
                     </li>
                     <li>
                       <a href="/endereco/" data-view=".view-main" class="panel-close">Local</a>
@@ -77,6 +77,9 @@
                     <li>
                         <a href="/pedidosadm/" data-view=".view-main" class="panel-close pedidosadmindex">Pedidos Adm.</a>
                     </li>
+                    <li>
+                      <!-- <a href="#" data-popup=".form-firebase" class="popup-open cadastro">Cadastro Adm.</a> -->
+                  </li>
                     <li>
                         <a href="#" data-popup=".form-firebase" class="popup-open">Pedidos</a>
                     </li>
@@ -297,88 +300,88 @@
         </div>
         
         
-      <div class="popup form-firebase">
-        <div class="view">
-          <div class="page color-theme-red">
-            <div class="navbar">
-              <div class="navbar-inner sliding">
-                <div class="left">
-                  <a href="#" class="popup-close">
-                    <i class="icon icon-back"></i>
-                    <span class="ios-only">Voltar</span>
-                  </a>
+        <div class="popup form-firebase">
+          <div class="view">
+            <div class="page color-theme-red">
+              <div class="navbar">
+                <div class="navbar-inner sliding">
+                  <div class="left">
+                    <a href="#" class="popup-close">
+                      <i class="icon icon-back"></i>
+                      <span class="ios-only">Voltar</span>
+                    </a>
+                  </div>
+                  <div class="title">Pedido</div>
                 </div>
-                <div class="title">Pedido</div>
               </div>
-            </div>
-          
-          <div class="page-content">
             
-              <h1>Cadastro de Pedido</h1>
-        
-            <div class="block-title"></div>
-            <div class="list no-hairlines-md">
-              <ul>
-                <li>
-                  <div class="item-content item-input">
-                    <div class="item-inner">
-                      <div class="item-title item-label">Nome</div>
-                      <div class="item-input-wrap">
-                        <input type="text" id="nome" placeholder="Seu nome"/>
+            <div class="page-content">
+              
+                <h1>Cadastro de Pedido</h1>
+          
+              <div class="block-title"></div>
+              <div class="list no-hairlines-md">
+                <ul>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Nome</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="nome" placeholder="Seu nome"/>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="item-content item-input">
-                    <div class="item-inner">
-                      <div class="item-title item-label">E-mail</div>
-                      <div class="item-input-wrap">
-                        <input type="email" id="emailcadastro" placeholder="E-mail"/>
+                  </li>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">E-mail</div>
+                        <div class="item-input-wrap">
+                          <input type="email" id="emailcadastro" placeholder="E-mail"/>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="item-content item-input">
-                    <div class="item-inner">
-                      <div class="item-title item-label">Telefone</div>
-                      <div class="item-input-wrap">
-                        <input type="tel" id="telefone" placeholder="Telefone"/>
+                  </li>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Telefone</div>
+                        <div class="item-input-wrap">
+                          <input type="tel" id="telefone" placeholder="Telefone"/>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="item-content item-input">
-                    <div class="item-inner">
-                      <div class="item-title item-label">Endereço</div>
-                      <div class="item-input-wrap">
-                        <input type="text" id="endereco" placeholder="endereco"/>
+                  </li>
+                  <li>
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Endereço</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="endereco" placeholder="endereco"/>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li class="align-top">
-                  <div class="item-content item-input">
-                    <div class="item-inner">
-                      <div class="item-title item-label">Mensagem</div>
-                      <div class="item-input-wrap">
-                        <textarea id="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+                  </li>
+                  <li class="align-top">
+                    <div class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Mensagem</div>
+                        <div class="item-input-wrap">
+                          <textarea id="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-              <p class="row">
-                <!-- <button id="addButton" class="button button-big button-fill button-raised">Enviar</button> -->
-                <!-- <input type="button" id="addButton" value="Enviar" class="button button-big button-fill button-raised"> -->
-                <a href="#" id="addButton" class="col button button-big button-fill button-raised addButton">Enviar</a>
-              </p>
+                  </li>
+                <p class="row">
+                  <!-- <button id="addButton" class="button button-big button-fill button-raised">Enviar</button> -->
+                  <!-- <input type="button" id="addButton" value="Enviar" class="button button-big button-fill button-raised"> -->
+                  <a href="#" id="addButton" class="col button button-big button-fill button-raised addButton">Enviar</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>    
+        </div>    
       </div>
     </div>
   </div>
